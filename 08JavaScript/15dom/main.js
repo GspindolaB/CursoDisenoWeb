@@ -1,5 +1,6 @@
 //Accedemos al elemento por su tag HTML
 var cajas = document.getElementsByTagName('div');
+
 //Cambiar el contenido de un elemento
 cajas[0].textContent = 'Hola Mundo';
 cajas[0].innerHTML = '<b>Hola</b>'
