@@ -24,7 +24,7 @@ nuevo.setAttribute('class', 'caja naranja');
 //5.- Posicionarlo en el documento
 var contenedor = document.getElementById('contenedor');
 contenedor.appendChild(nuevo);
-
+/*
 //MODIFICANDO ELEMENTOS DEL DOM
 //Modificando el ID
 nuevo.id = 'primero';
@@ -45,3 +45,4 @@ padre.replaceChild(nuevo, cajas[3]);
 //ELIMINANDO NODOS DEL DOM
 //Se pasa como parámetro el elemento a eliminar
 padre.removeChild(cajas[1]);
+*/
