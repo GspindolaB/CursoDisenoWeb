@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inputs</title>
+</head>
+
+<body>
+    <form action="" method="">
+        <!-- El input de tipo password no nos permite ver lo que escribimos, lo muestra oculto con puntos. -->
+        <label for="contraseña">Contraseña:</label><input type="password" name="contraseña" id="contraseña" placeholder="Contraseña:" minlength="3" maxlength="10"><br>
+        <!-- El input de tipo color nos permite elegir un color -->
+        <label for="color"></label>Color:<input type="color" name="color" id="color"><br>
+        <!-- El input de tipo email nos valida que lo ingresado tenga la estructura de un correo elctronico -->
+        <label for="email">Email:</label><input type="email" name="email" id="email"><br>
+        <!-- El label de tipo number nos permite elegir números, aqui podemos agregar un rango minimo xon el atributo min y uno maximo con el atributo max -->
+        <label for="numero">Numero:</label><input type="number" name="numero" id="numero" min="18" max="65"><br>
+        <!-- El input de tipo range nos permite elegir entre un rango de numeros pero con una barra desplazadora -->
+        <input type="range" name="rango" id="rango" min="0" max="10"><br>
+        <!-- El input de tipo URL nos permite ingresar una liga de Internet -->
+        <input type="url" name="url" id="url">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

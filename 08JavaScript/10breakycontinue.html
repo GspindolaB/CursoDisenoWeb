@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sentencias Break y Continue</title>
+</head>
+
+<body>
+    <script>
+        var amigos = ['Luis', 'Marco', 'Maruri', 'Eduardo'];
+        for (amigo in amigos) {
+            if (amigos[amigo] == 'Maruri') {
+                //Al llegar al nombre de Maruri se saltara y continuara con la siguiente ejecución
+                continue;
+            }
+            document.write(amigos[amigo] + '<br>');
+            /*
+            if (amigos[amigo] == 'Marco') {
+                //Con esta sentencia no ejecutara nada después de encontrar el nombre de Marco
+                break;
+            }*/
+        }
+    </script>
+</body>
+
+</html>

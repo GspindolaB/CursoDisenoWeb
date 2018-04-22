@@ -1,0 +1,27 @@
+//Declaramos el mixin
+@mixin colores ($fondo, $articulo) {
+    body {
+        background: $fondo;
+    }
+    .articulo {
+        background: $articulo;
+    }
+}
+
+//Ejecutamos el mixin
+@include colores(#ff8000, #fff);
+@mixin borde-redondeado($pixeles) {
+    border-radius: $pixeles;
+    -moz-border-radius: $pixeles;
+    -webkit-border-radius: $pixeles;
+    -ms-border-radius: $pixeles;
+    -o-border-radius: $pixeles;
+}
+
+article {
+    @include borde-redondeado(5px);
+}
+
+footer {
+    @include borde-redondeado(100%);
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background: #121258;
+}
+
+.contenedor {
+    margin: 20px;
+    background: #cfb5b5;
+    width: 300px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.contenedor input {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.submit {
+    color: aliceblue;
+    background: orangered;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contenedor p {
+    margin: 20px;
+    text-align: center;
+    color: orangered;
+    font-size: 20px;
+}

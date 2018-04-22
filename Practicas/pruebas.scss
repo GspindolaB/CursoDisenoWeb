@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.contenedor {
+    width: 90%;
+    background: #0c4574;
+    margin: auto;
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            width: 100%;
+            li {
+                padding: 20px 50px;
+                width: 20%;
+                &:hover {
+                    background: #1d5f96;
+                }
+                a {
+                    text-align: center;
+                    color: #fff;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .contenedor-imagenes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: rgb(150, 143, 143);
+        .trabajo {
+            width: 30%;
+            margin-bottom: 40px;
+            .thumb {
+                width: 100%;
+                img {
+                    width: 100%;
+                    border-radius: 25px;
+                    vertical-align: top;
+                    padding: 20px 20px;
+                    &:hover {
+                        opacity: .5;
+                    }
+                }
+            }
+            .descripcion {
+                text-align: center;
+                color: whitesmoke;
+                font-family: Arial, Helvetica, sans-serif;
+                .nombre {
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                .categoria {
+                    font-weight: bolder;
+                    font-size: 24px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor {
+        nav {
+            ul {
+                li {
+                    width: 100%;
+                }
+            }
+        }
+        .contenedor-imagenes {
+            .trabajo {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor {
+        .contenedor-imagenes {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .trabajo {
+                width: 100%;
+            }
+        }
+    }
+}

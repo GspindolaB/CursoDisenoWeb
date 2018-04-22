@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Métodos y propiedades</title>
+</head>
+
+<body>
+    <script>
+        var yo = ['Guillermo', 'Ricardo', 'Spindola', 'Brisuela'];
+        //Método length: Nos permite saber cuantos elementos tiene un arreglo
+        var length = yo.length;
+        document.write(length);
+
+        //Método join: Juntar el arreglo y mostrarlo como cadena de texto. El parámetro que recibe es el separador entre cada elemento
+        var join = yo.join('*');
+        //document.write(join);
+
+        //Método POP y PUSH. Con POP eliminamos el ultimo elemento del arreglo. Con PUSH agregamos un elemento al final del arreglo.
+        //yo.pop();
+        //console.log(yo);
+        //yo.push('MPLVT');
+        //console.log(yo);
+
+        //Método SHIFT y UNSHIFT. Shift elimina un elemento al principio y UNSHIFT nos permite agregarlo
+        //yo.shift();
+        //console.log(yo);
+        //yo.unshift('Ismael');
+        //console.log(yo);
+
+        //Método CONCAT: Nos permite juntar dos o más arreglos dentro de uno solo
+
+        var amigos = ['Marco', 'Luis', 'Eduardo'];
+        var concat = amigos.concat(yo);
+        document.write(concat);
+
+        //Método SORT y REVERSE: SORT nos permite ordenar de manera alfabetica el arreglo. De igual manera REVERSE pero al revés.
+        //No funcionan para ordenar números, solo cadenas de texto;
+        var sort = yo.sort();
+        console.log(sort);
+        var reverse = yo.reverse();
+        console.log(reverse);
+    </script>
+</body>
+
+</html>

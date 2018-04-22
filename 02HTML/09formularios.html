@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <!-- Para trabajar con un formulario ocupamos la etiqueta <form> 
+        El atributo action nos permite poner el nombre de un archivo y toda la información que tengasmos en el formulario se enviara a dicho archivo
+        El atributo method nos permite indicar de que manera se envian los datos, GET los envia mediante la url y POST no nos permite visualizarlos -->
+    <form action="" method="">
+        <!-- La etiqueta <input> nos permite agregar elementoss a nuestro formulaio 
+            El atributo type nos permite elegir el tipo
+            El name y el id nos permiten identificar al elemento
+            También tenemos el atributo value que asigna un valor por defecto
+            Y finalmente el placeholder que nos da una idea de lo que vamos a escribir
+            El atributo maxlength nos permite indicar el maximo de carácteres a ingresar
+            Size nios permite modificar el tamaño
+            El atributo required lo indicamos para indicar que este elemento es obligatorio llenarlo
+            readonly lo indicamos cuando requerimos que el input sea de solo lectura y disables se utiliza para deshabilitar por completo el campo-->
+        <label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" value="" placeholder="Nombre:" maxlength="5" size="23" required><br>
+        <!-- el tipo de input email nos indica que hay que ingresar un correo electrónico valido -->
+        <label for="correo">Email:</label> <input type="email" name="correo" id="correo" size="23" placeholder="Email:" required><br>
+        <!-- este tipo de input nos sirve para escribir mensajes más largos y sus atributos cols y rows para definir el ancho y alto  -->
+        <label for="mensaje">Escribe tu mensaje:</label> <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje:"></textarea><br>
+        <!-- La etiqueta label nos permite agregar una etiqueta de texto
+            Su atributo for nos permite relacioarlo con otro input siempre y cuando el atributo de for de label y el de id del input sean iguales-->
+        <label for="pais">País</label>
+        <!-- El select nos permite elegir una opción entre una multiples opciones permitidas 
+            Su etiqueta option nos permite definir las multiples opciones y su atributo value contiene estas opciones-->
+        <select name="pais" id="pais">
+            <option value="México">México</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Argentina">Argentina</option>
+        </select><br>
+        <!-- El input de tipo radio nos permite elegir entre distintos valores, mienras el atributo name tenga el mismo valor, nos permitira elegir solo uno de los dos -->
+        <input type="radio" name="sexo" value="Hombre" id="Hombre"><label for="Hombre">Hombre</label>
+        <input type="radio" name="sexo" value="Mujer" id="Mujer"><label for="Mujer">Mujer</label><br>
+        <!-- El input checkbox nos permite elegir tambien entre opciones pero es reomendable poner solo uando hay una y el radio cuando son varias -->
+        <input type="checkbox" name="terminos" id="terminos"><label for="terminos">Terminos y condiciones</label>
+        <!-- este tipo de input nos sirve para enviar elementos -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

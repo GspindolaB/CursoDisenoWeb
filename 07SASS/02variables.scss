@@ -1,0 +1,12 @@
+$color: #0f2d5e;
+$borde: 10px solid red;
+.articulo {
+    border: $borde;
+    .titulo {
+        color: $color;
+        ;
+    }
+    p {
+        color: $color;
+    }
+}

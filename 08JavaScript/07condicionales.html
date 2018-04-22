@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicionales</title>
+</head>
+
+<body>
+    <script>
+        var edad = 75;
+        /*IF
+        if (edad < 18) {
+            alert('NO PUEDES VOTAR EN LAS ELECCIONES');
+        }
+
+        if (edad >= 18) {
+            alert('YA ERES GRANDE, PUEDES VOTAR');
+        }
+        //IF-ELSE
+        if (edad < 18) {
+            alert('NO PUEDES VOTAR EN LAS ELECCIONES');
+        } else {
+            alert('YA ERES GRANDE, PUEDES VOTAR');
+        }*/
+        //ELSE-IF ANIDADO
+        if (edad < 18) {
+            alert('ERES MENOR DE EDAD');
+        } else if (edad < 65) {
+            alert('ERES MAYOR DE EDAD');
+        } else {
+            alert('ERES DE LA TERCERA EDAD');
+        }
+
+        //SWITCH
+        var pais = 'Italia';
+        switch (pais) {
+            case 'México':
+                alert('Eres mexicano');
+                break;
+            case 'EUA':
+                alert('Eres estadounidense');
+                break;
+            case 'Canada':
+                alert('Eres canadiense');
+                break;
+            default:
+                alert('No eres de NorteAmerica');
+                break;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio</title>
+</head>
+
+<body>
+    <!-- Esta etiqueta nos permite agregar audio a nuestro sitio web y es nueva en HTML5 
+        Necesitamos el atributo controls para que se nos visualicen los controles en el documento html
+        Los formatos permitidos son .mpeg, ogg y wav aunque algunos no son compatibles con todos los navegadores-->
+    <audio src="media/hyperfun.mp3" controls></audio><br>
+    <!-- Tambi´´en podemos agregar audio de la siguiente manera
+        Con la etiqueta source en su atributo src seleccionamos la ruta y en eñ atributo type el tipo de audio que es.
+        Esta es la manera correcta-->
+    <audio controls>
+        <source src="media/hyperfun.mp3" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>

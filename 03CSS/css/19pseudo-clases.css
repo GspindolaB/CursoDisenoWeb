@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a {
+    background: #4357ad;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: azure;
+    background: rgb(87, 87, 209);
+    padding: 15px 20px;
+}
+
+a:active {
+    color: rgb(129, 6, 6);
+}
+
+
+/*Enlaces qye ya han sido visitados
+a:visited {
+    background: rgba(9, 145, 9, 0.171);
+}*/
+
+div {
+    width: 400px;
+}
+
+div p:hover {
+    background: grey;
+    text-shadow: 10px 10px 10px black;
+}
+
+
+/*Accede a la primera línea*/
+
+div p::first-line {
+    background: #3a3a3a;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+
+/*Accede al segundo elemento, en este caso al segundo parrafo*/
+
+div p:nth-child(2) {
+    background: #4357ad;
+    color: wheat;
+    padding: 10px;
+}

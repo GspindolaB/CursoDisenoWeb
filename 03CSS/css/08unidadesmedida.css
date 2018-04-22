@@ -1,0 +1,41 @@
+body {
+    font-size: 10px;
+}
+
+
+/*Como el valor del body es de 20px y es el elemento padre de p, 1 em equivale a 20 px. Dos em equivaleran a 40 px, 3 em a 60 px y así sucesivamente.
+Por ejemplo, si queremos conocer el valor de px en em dividimos el valor de los px deseados entre los px del elemento padre.
+Ejemplo: 55px/20px = 2.75 */
+
+p {
+    font-size: 2.75em;
+}
+
+.padre {
+    font-size: 2em;
+}
+
+
+/*En este caso el body ya no es el elemto padre, es el div con la clase padre. Si queremos que el elemento padre sea body, tenemos que elegir rem en vez de em*/
+
+.hijo {
+    width: 10rem;
+    height: 10rem;
+    background: black;
+    color: white;
+}
+
+
+/*
+UNIDADES RELATIVAS
+    px - pixel.
+    em - Relativa al tamaño de fuente que tenga su elemento padre o el más cercano.
+    rem - Relativa al tamaño de fuente especificado en el body.
+    % - porcentaje.
+
+UNIDADES ABSOLUTAS
+    Nunca se utilizan en el diseño web pero es bueno conocerlas.
+    in - inches(pukgadas).
+    cm - centimetros.
+    mm - milimetros.
+*/

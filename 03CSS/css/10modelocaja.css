@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+
+.caja {
+    background-color: #585858;
+    width: 200px;
+    /*height: 200px;
+    /*Esta propiedad nos permite establecer margenes a los elementos, con un valor establece margen a todos los lados.
+    Con dos valores, el primero establece margen arriba y abajo y el segundo a la izquierda y derecha..
+    Con cuatro valores el primero establece margen arriba, el segundo a la derecha, el tercero abajo y el cuarto a la izquierda.7
+    */
+    margin: 20px;
+    /*Tambien se pueden establecer los valores por separado
+    margin-top: ;
+    margin-right: ;
+    margin-bottom: ;
+    margin-left: ;*/
+    /*Esta propiedad nos permite establecer margenes interiores a los elementos, con un valor establece margen a todos los lados.
+    Con dos valores, el primero establece margen arriba y abajo y el segundo a la izquierda y derecha..
+    Con cuatro valores el primero establece margen arriba, el segundo a la derecha, el tercero abajo y el cuarto a la izquierda.7
+    */
+    padding: 20px;
+    /*Tambien se pueden establecer los valores por separado
+    padding-top: ;
+    padding-right: ;
+    padding-bottom: ;
+    padding-left: ;*/
+    border: 2px solid #000000;
+}
+
+.caja p {
+    background-color: #2E2E2E;
+}

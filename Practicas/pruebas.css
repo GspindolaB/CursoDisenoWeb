@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.contenedor {
+  width: 90%;
+  background: #0c4574;
+  margin: auto; }
+  .contenedor nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%; }
+    .contenedor nav ul li {
+      padding: 20px 50px;
+      width: 20%; }
+      .contenedor nav ul li:hover {
+        background: #1d5f96; }
+      .contenedor nav ul li a {
+        text-align: center;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block; }
+  .contenedor .contenedor-imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #968f8f; }
+    .contenedor .contenedor-imagenes .trabajo {
+      width: 30%;
+      margin-bottom: 40px; }
+      .contenedor .contenedor-imagenes .trabajo .thumb {
+        width: 100%; }
+        .contenedor .contenedor-imagenes .trabajo .thumb img {
+          width: 100%;
+          border-radius: 25px;
+          vertical-align: top;
+          padding: 20px 20px; }
+          .contenedor .contenedor-imagenes .trabajo .thumb img:hover {
+            opacity: .5; }
+      .contenedor .contenedor-imagenes .trabajo .descripcion {
+        text-align: center;
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif; }
+        .contenedor .contenedor-imagenes .trabajo .descripcion .nombre {
+          margin-bottom: 10px;
+          font-weight: bold;
+          font-size: 20px; }
+        .contenedor .contenedor-imagenes .trabajo .descripcion .categoria {
+          font-weight: bolder;
+          font-size: 24px;
+          color: black; }
+
+@media screen and (max-width: 800px) {
+  .contenedor nav ul li {
+    width: 100%; }
+  .contenedor .contenedor-imagenes .trabajo {
+    width: 50%; } }
+@media screen and (max-width: 500px) {
+  .contenedor .contenedor-imagenes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .contenedor .contenedor-imagenes .trabajo {
+      width: 100%; } }
+
+/*# sourceMappingURL=pruebas.css.map */

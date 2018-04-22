@@ -1,0 +1,26 @@
+body {
+    /*background: black;
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    /*No repite la imagen de fondo
+    /*background-repeat: repeat;/*Repite la imagen de fondo
+    background-repeat: repeat-x;/*Repite la imagen en el eje de la X
+    background-repeat: repeat-y;
+    /*Repite la imagen en el eje de la Y
+    background-size: cover;
+    /*Permite definir el tipo de fondo
+    background-attachment: fixed;
+    /*Define la posición del fondo
+    background-position: center;*/
+    /*ESTO ES LO MISMO QUE LO ANTERIOR*/
+    background: url('../img/eight_horns.png') repeat fixed;
+    /*background-size: cover;*/
+}
+
+.fondo {
+    width: 600px;
+    height: 600px;
+    background: url('../img/bg.jpg') #000;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}

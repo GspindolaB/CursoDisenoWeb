@@ -1,0 +1,68 @@
+@keyframes colores {
+    /*
+    from {
+        background: #d1e3dd;
+    }
+    to {
+        background: #5762d5;
+    }
+    */
+    0% {
+        background: #d1e3dd;
+        width: 400px;
+    }
+    25% {
+        background: #5762d5;
+        width: 600px;
+    }
+    50% {
+        background: #6e7dab;
+        width: 800px;
+    }
+    75% {
+        background: #575366;
+        width: 1000px;
+    }
+    100% {
+        background: #32292f;
+        width: 1200px;
+    }
+}
+
+@keyframes movimiento {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(750px);
+    }
+    /*
+    0% {
+        transform: translate(0px);
+    }
+    25% {
+        transform: translate(250px);
+    }
+    50% {
+        transform: translate(500px);
+    }
+    75% {
+        transform: translate(750px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+    */
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background: #d1e3dd;
+    animation-name: movimiento;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /*Se puede poner toda la animación en una sola línea
+    animation: colores 5s infinite
+    */
+}

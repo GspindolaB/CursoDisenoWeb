@@ -1,0 +1,24 @@
+.caja {
+    background: #ffaa5a;
+    width: 200px;
+    height: 200px;
+    /*El primer valor es el desplazamiento de forma horizontal y el segundo de forma vetical
+    transform: translate(200px, 50px);
+    transform: scale(1, 2);
+    transform: rotate(45deg);
+    transform: skew(0deg, 20deg);*/
+    /*Tambien existe la misma propiedad para el eje de las X y Y en donde iria solamente un valor
+    transform: translateX(200px);
+    transform: translateY(200pX);
+    */
+    /*Se pueden utilizar todas a la vez*/
+    transform: translate(200px) scale(1.5, 1.5) rotate(45deg) skew(20deg, 40deg);
+}
+
+
+/*La propiedad gtransform nos sirve para lo siguiente:
+    Trasladar elementos.
+    Escalar elementos.
+    Rotar elementos.
+    Sesgar elementos.
+*/

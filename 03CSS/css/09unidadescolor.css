@@ -1,0 +1,13 @@
+body {
+    background-color: #96F5DA;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: #1B7A5F;
+    /*El primer parametros es rojo, el segundo verde y el tercero azul*/
+    color: rgb(255, 0, 0);
+    /*El primer parametros es rojo, el segundo verde, el tercero azul y el cuarto alpha
+     color: rgba(255, 0, 0,1 0);*/
+}

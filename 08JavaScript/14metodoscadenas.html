@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Métodos para cadenas de texto</title>
+</head>
+
+<body>
+    <script>
+        var nombre = 'Guillermo Ricardo';
+        //Nos permite conocer el numero de caracteres de la cadena
+        var noCaracterer = nombre.length;
+        console.log('Este nombre tiene ' + noCaracterer + ' carácteres que son ' + nombre);
+        //Nos permite obtener una parte de la cadena. Recibe dos parámetros el primero es desde donde obtendra los datos y el segundo hasta donde
+        var primNombre = nombre.substring(0, 9);
+        console.log('El primer nombre es: ' + primNombre);
+        //Tambíen se puede con el siguiente método
+        var segNombre = nombre.substr(10, 17);
+        console.log('El segundo nombre es: ' + segNombre);
+        //El método replace nos ayuda a reemplazar una cadena por otra. El primer parámetro es la cadena a remplazar y el segundo
+        //la nueva cadena
+        var nuevo = nombre.replace('Guillermo Ricardo', 'William Richard');
+        console.log(nuevo);
+        //toUpperCase transforma la cadena a mayusculas
+        var mayusculas = nombre.toUpperCase();
+        console.log(mayusculas);
+        //toLowerCase transforma la cadena a minusculas
+        var minusculas = nombre.toLowerCase();
+        console.log(minusculas);
+        //indexOf encuentra la primera ocurrencia que se haya indicado el el parámetro
+        var posicion = nombre.indexOf('o');
+        console.log(posicion);
+        //lastIndexOg realiza lo mismo pero en orden inverso
+        var last = nombre.lastIndexOf('o');
+        console.log(last);
+    </script>
+</body>
+
+</html>

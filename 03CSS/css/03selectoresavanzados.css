@@ -1,0 +1,41 @@
+/*Selector de hijos: */
+
+
+/*Solo los p+arrafos que dependan directamente de un div*/
+
+div>p {
+    font-size: 20px;
+    color: rebeccapurple;
+}
+
+
+/*Selector de atributos*/
+
+
+/*Todos los elementos que tengan el atributo type*/
+
+input[type] {
+    color: bisque;
+}
+
+
+/*Todos los elementos que tengan el valor de text en el atributo type*/
+
+input[type="text"] {
+    color: red;
+}
+
+
+/*Todos los elementos dentro de body*/
+
+body {
+    color: blue;
+}
+
+
+/*Este no toma los de body porque definimos sus propios estilos*/
+
+article {
+    color: burlywood;
+    font-size: 25px;
+}

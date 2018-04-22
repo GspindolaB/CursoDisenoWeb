@@ -1,0 +1,50 @@
+/*Estilos a la primera letra del párrafo*/
+
+p::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/*Estilos a la primera línea del parrafo*/
+
+p::first-line {
+    background: gray;
+}
+
+
+/*Estilos al subrayar el texto*/
+
+*::-moz-selection {
+    background: #f9a03f;
+    color: whitesmoke;
+}
+
+.caja {
+    background: #f9a;
+    height: 150px;
+    width: 150px;
+}
+
+
+/*Agregar contenido antes de un elemento*/
+
+.caja::before {
+    content: 'Contenido antes de la caja';
+    display: block;
+    background: #3a3a3a;
+    color: white;
+}
+
+
+/*Agregar contenido despues de un elemento*/
+
+.caja::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: black;
+    position: relative;
+    left: 50px;
+}

@@ -1,0 +1,35 @@
+a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/*ESTILOS AL PASAR POR ENCIMA DE UN ENLACE*/
+
+a:hover {
+    background: #f9a03f;
+    color: white;
+}
+
+
+/*ESTILOS PARA UN ENLACE QUE NO HA SIDO VISITADO*/
+
+a:link {
+    text-decoration: none;
+    color: red;
+}
+
+
+/*ESTILOS PARA ENLACES QUE HAN SIDO VISITADOS*/
+
+a:visited {
+    color: gray;
+}
+
+
+/*ESTILOS PARA UN ENLACE AL MOMENTO DE HACER CLIC*/
+
+a:active {
+    text-decoration: underline;
+    color: blue;
+}

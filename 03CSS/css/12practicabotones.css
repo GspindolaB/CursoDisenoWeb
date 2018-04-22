@@ -1,0 +1,62 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+div {
+    margin: 20px 0;
+}
+
+
+/*Estilos estandar*/
+
+.btn {
+    background-color: firebrick;
+    color: whitesmoke;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+/*Estilos al pasar el puntero por encima de los botones*/
+
+.btn:hover {
+    opacity: .5;
+}
+
+
+/*Estilos para los diferentes tamaños*/
+
+.small {
+    font-size: 10px;
+    padding: 10px 15px;
+    background-color: rgb(223, 70, 14);
+}
+
+.medium {
+    font-size: 15px;
+    padding: 12.5px 17.5px;
+    background-color: rgb(11, 138, 11);
+}
+
+.big {
+    font-size: 20px;
+    padding: 15px 20px;
+    background-color: rgb(19, 95, 196);
+}
+
+.extra-big {
+    font-size: 25px;
+    padding: 20px 25px;
+    background-color: rgb(199, 40, 138);
+}
+
+
+/*Estilos para los botones con bordes redondeados*/
+
+.radius {
+    border-radius: 100px;
+}

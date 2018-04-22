@@ -1,0 +1,27 @@
+.caja {
+    width: 200px;
+    height: 200px;
+    background: #21295c;
+    /*El primer valor indica a que propiedades se aplicara la transición, el segundo la velocidad y el tercero la velocidad de curva*/
+    transition: all 2.5s ease;
+    -webkit-transition: all 2.5s ease;
+    -moz-transition: all 2.5s ease;
+    /*Tiempo de espera para que se ejecute la transición
+    transition-delay: 1.5s;*/
+}
+
+
+/*Velocidad de curva
+    ease: inicio lento, después rapido y termina lento.
+    linear: misma velocidad de inicio a fin.
+    ease-in: inicio lento.
+    ease-out: final lento.
+    ease-in-out: inicio lento y final lemnto
+*/
+
+.caja:hover {
+    background: #9eb3c2;
+    width: 400px;
+    height: 400px;
+    transform: rotate(180deg)
+}

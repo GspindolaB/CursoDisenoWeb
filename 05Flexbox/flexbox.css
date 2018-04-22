@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 700px;
+    height: 500px;
+    background: #212d40;
+    /*Esta propiedad nos permite hacer flexibles los elementos hijo*/
+    display: flex;
+    /*Nos permite establecer el orden de los elementos, los valores permitidos son los siguientes
+    row:
+    row-reverse:
+    column:
+    column-reverse:
+    */
+    flex-direction: row;
+    /*Los valores permitidos son: wrap, nowrap, wrap-reverse*/
+    flex-wrap: wrap;
+    /*Esta es una combinacion de las dos anteriores
+    flex-flow: row wrap; */
+    /*Nos permite alinear el contenido. 
+    flex-start: valor por defecto.
+    flex-end: alinea los elementos a la derecha.
+    center: centra el contenido.
+    space-between: divide el espacio sobrante entre cada uno de los elementos.
+    space-around: agrega un espacio tambien al inicio y al final.
+    */
+    justify-content: space-between;
+    /*Alinear contenido verticalmente*/
+    /*align-items: baseline;*/
+    /*Funciona igual que la anterior solo que esta funciona solamente cuando hay más de una línea de elementos*/
+    align-content: center;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+    /*Podemos ordenar el acomodo que tengan 
+    order: 1;*/
+    /*El espacio se distribuye en el tamaño de todos los elementos
+    flex-grow: 1;*/
+    /*Define la habilidad de un elemento para que se pueda hacer màs pequeño
+    flex-shrink: 1;*/
+    /*Nos permite especificar el valor inicial que tendra un elemento
+    flex-basis: auto;*/
+    /*Es un atajo para flex-grow, flex-shrink y flex-basis*/
+    flex: 1 1 auto;
+}
+
+.dos {
+    /*
+    align-self: stretch;
+    height: auto;*/
+}
+
+
+/*
+.uno {
+    order: 3;
+}
+
+.dos {
+    order: 2;
+}
+
+.tres {
+    order {
+        1;
+    }
+}*/

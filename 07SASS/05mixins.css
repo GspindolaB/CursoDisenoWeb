@@ -1,0 +1,21 @@
+body {
+  background: #ff8000; }
+
+.articulo {
+  background: #fff; }
+
+article {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px; }
+
+footer {
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%; }
+
+/*# sourceMappingURL=05mixins.css.map */

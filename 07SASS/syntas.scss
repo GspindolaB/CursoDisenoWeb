@@ -1,0 +1,17 @@
+//Esta syntas es más nueva pero utiliza {} y ;
+body {
+    background: #f2f2f2;
+}
+
+.articulo {
+    background: #fff;
+    .titulo {
+        color: black;
+    }
+    .autor {
+        color: green;
+        .a {
+            text-decoration: none;
+        }
+    }
+}

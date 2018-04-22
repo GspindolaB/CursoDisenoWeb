@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ciclo While</title>
+</head>
+
+<body>
+    <script>
+        var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+            'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+        ];
+
+        var numero = 1;
+
+        while (numero <= 10) {
+            document.write(numero + '<br>');
+            numero++;
+            //numero = numero + 1;
+        }
+
+        var num = 0;
+
+        while (num < meses.length) {
+            document.write(num + 1 + '.-' + meses[num] + '<br>');
+            num++;
+        }
+
+        var du = 1;
+
+        //DO WHILE
+        do {
+            //codigo se repite al menos una vez
+            console.log(du)
+            du = du + 1;
+        } while (du <= 10)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+    /*Selector universal: Todos los elementos de nuestro sitio web
+    
+    * {
+        color: red;
+    }
+    */
+    /*Selectores de etiqueta*/
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: blue;
+    }
+    /*Selectores descendentes: Elementos  que estén dentro de otros*/
+    /*Estilos a todos los parrafos*/
+    
+    p {
+        font-size: 20px;
+        color: black;
+    }
+    /*Todos los p+arrafos que esten dentro de un div*/
+    
+    div p {
+        font-size: 40px;
+        color: grey;
+    }
+    /*Todos los parrafos que estebn dentro de un div y un article*/
+    
+    div article p {
+        font-size: 60px;
+        color: gray;
+    }
+    /*Todos los enlaces que esten dentro de un parrafo*/
+    
+    p a {
+        color: orange;
+    }
+    /*Selector de clases: Ponemos un punto y el nombre de la clase de nuestro elemento*/
+    
+    .grande {
+        color: violet;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    /*Selector de id: Ponemos el símbolo # y el nombre del id del elemento 'NO ES RECOMENDABLE PARA CSS'*/
+    
+    #grande {
+        color: brown;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }

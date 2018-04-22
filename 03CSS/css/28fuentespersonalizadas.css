@@ -1,0 +1,46 @@
+/*Agregamos la fuente descargada*/
+
+@font-face {
+    font-family: "RobotoCondensed-Bold";
+    src: url('fonts/RobotoCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-BoldItalic";
+    src: url('fonts/RobotoCondensed-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Italic";
+    src: url('fonts/RobotoCondensed-Italic.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Light";
+    src: url('fonts/RRobotoCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-LightItalic";
+    src: url('fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Regular";
+    src: url('fonts/RobotoCondensed-Regular.ttf');
+}
+
+
+/*Utilizamos la fuente con el nombre que le dimos en font-family al declararla*/
+
+body {
+    font-family: "RobotoCondensed-Regular";
+}
+
+h1 {
+    font-family: "RobotoCondensed-Bold";
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+}

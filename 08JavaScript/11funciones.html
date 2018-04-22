@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funciones</title>
+</head>
+
+<body>
+    <script>
+        function saludar() {
+            alert('SALUDO');
+        }
+
+        saludar();
+
+        function sumar(n1, n2) {
+            var resultado = n1 + n2;
+            document.write(resultado);
+            document.write('<br>');
+        }
+        sumar(10, 5);
+        sumar(8, 4);
+        sumar(12, 8);
+
+        function restar(num1, num2) {
+            var resultado = num1 - num2;
+            return resultado;
+        }
+
+        alert(restar(25, 4));
+
+        var funcion = function(numero1, numero2) {
+            return numero1 + numero2;
+        }
+        document.write(funcion(8, 2));
+        //FUNCIONES AUTOINVOCADAS
+        (function() {
+            alert('JOTOS TODOS');
+        }());
+    </script>
+</body>
+
+</html>

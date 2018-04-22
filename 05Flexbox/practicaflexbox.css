@@ -1,0 +1,250 @@
+/*Estilos generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/*Estilos del body*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000 url('img/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*CONTENEDOR*/
+
+.contenedor {
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    /*Como es el elemento padre le indicamos que tenga flex en su propiedad de display*/
+    display: flex;
+    /*La dirección de los elementos ira en forma de filas, es decir, uno a lado de otro*/
+    flex-direction: row;
+    /*Cuando el contenedor llegue al 100% de su tamaño, los elementos se colocan uno abajo de otro*/
+    flex-wrap: wrap;
+}
+
+
+/*Header*/
+
+header {
+    width: 100%;
+    padding: 50px 0;
+    /*Tambiémn colocamos esta propiedad ya que el header es la clase padre de los divs con la clase logo y menu*/
+    display: flex;
+    /*Acomodamos los elementos en fila*/
+    flex-direction: row;
+    /*Colocamos space-between para acomodar los elementos uno al inicio y otro al final y entre ellos haya un espacio proporcional*/
+    justify-content: space-between;
+    /*Alineamos el contenido verticalmente al centro*/
+    align-items: center;
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+
+/*Main*/
+
+.main {
+    background: #fff;
+    padding: 20px;
+    width: 70%;
+}
+
+.main article .thumb {
+    margin-right: 20px;
+}
+
+.main article .thumb img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main article h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 32px;
+    font-family: "RobotoCondensed-Bold";
+}
+
+.main article p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+
+/*Aside*/
+
+aside {
+    width: 30%;
+    background: #537dca;
+    padding: 20px;
+    /*Es el elemento padre del div con la clase ad*/
+    display: flex;
+    /*Ponemos la dirección en forma de columna, es decir, uno abajo de otro*/
+    flex-direction: column;
+    /*Ya que los elementos alcancen el 100 % se colocan uno debajo de otro*/
+    flex-wrap: wrap;
+    /*Se coloca un elemento al inicio y otro al final y queda un espacio proporcional entre cada uno de ellos */
+    justify-content: space-between;
+}
+
+aside .ad {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+    background: #4264a2;
+    /*margin 20px 0;*/
+}
+
+
+/*Footer*/
+
+footer {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, .2);
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    /*Es la clase padre de los divs con la clase redes sociales y autor*/
+    display: flex;
+    /*Se colocan los elementos uno a lado de otro*/
+    flex-direction: row;
+    /**/
+    flex-wrap: nowrap;
+    /*Se colocan los elementos al inicio y al final y queda un espacio proporcional entre ellos*/
+    justify-content: space-between;
+}
+
+footer .redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+footer .redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+
+/*Cuando la pantalla llegue a un maximo de 800 px el main abarcara el 100% del contenedor, el aside de igual manera solo que esta vez acomodara sus elementos
+en forma de fila y no de columna, así mismo, los elementos ubicados dentro del aside tendrán un ancho del 40%*/
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        flex-direction: row;
+    }
+    aside .ad {
+        width: 40%;
+    }
+}
+
+
+/*Cuando la pantalla tenga un maximo de 600px de ancho el header colocara sus elementos uno abajo de otro y les dara un espaciado interior de 20 px
+en su parte de abajo. El menú abarcara el 100% de ancho, tendrá un fondo, los textos se alinearan al centro y tendrá un espaciado interior de 20px
+Los enlaces tendrán un margen a la derecha e izquierda de 0 y 20px arriba y abajo. El logo tendrá un margen inferior de 20px 
+El footer acomodara sus elementos uno abajo de otro y el orden se modifica quedando arriba las redes sociales y abajoel nombre del autor*/
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    header .menu {
+        width: 100%;
+        background: rgba(255, 255, 255, .2);
+        text-align: center;
+        padding: 20px;
+    }
+    header .menu a {
+        margin: 0 20px;
+    }
+    header .logo {
+        margin-bottom: 20px;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .autor {
+        order: 2;
+    }
+    footer .redes-sociales {
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*Cuando la pantalla llegue a 400px desaparece el aside*/
+
+@media screen and (max-width: 400px) {
+    aside {
+        display: none;
+    }
+}
+
+
+/*Agregamos la fuente descargada*/
+
+@font-face {
+    font-family: "RobotoCondensed-Bold";
+    src: url('RobotoCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-BoldItalic";
+    src: url('RobotoCondensed-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Italic";
+    src: url('RobotoCondensed-Italic.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Light";
+    src: url('RobotoCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-LightItalic";
+    src: url('RobotoCondensed-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Regular";
+    src: url('RobotoCondensed-Regular.ttf');
+}
+
+
+/*Utilizamos la fuente con el nombre que le dimos en font-family al declararla*/
+
+body {
+    font-family: "RobotoCondensed-Regular";
+}

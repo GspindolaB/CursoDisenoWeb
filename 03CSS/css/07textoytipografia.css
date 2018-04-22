@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    /*Tipo de fuente*/
+    font-family: cursive, Arial;
+    /*Tamaño de la fuente*/
+    font-size: 25px;
+    /*Estilo de la fuente*/
+    font-style: italic;
+    /**/
+    font-weight: lighter;
+    /*Color de la fuente*/
+    color: darkgreen;
+    /*Alineado de la fuente*/
+    text-align: center;
+    /*Decoración de la fuente*/
+    text-decoration: underline;
+    /*Tipo de transformación(mayusculas, minusculas o letras capitales)*/
+    text-transform: capitalize;
+    /*Espaciado entre letras*/
+    letter-spacing: 20px;
+    /*Alineación vertical*/
+    line-height: 105px;
+}
