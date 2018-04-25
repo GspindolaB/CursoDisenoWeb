@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Localstorage</title>
+</head>
+<body>
+    <script>
+        //Comrpobamos que el navegador soporte localStorage
+        if(typeof(Storage) !== "undefined"){
+            //Creamos el item
+            localStorage.setItem('nombre', 'Guillermo Ricardo');
+            //tambien se puede de esta manera
+            //localStorage.nombre = 'Spindola Brisuela';
+            //document.write('Si soporta')
+            document.write(localStorage.nombre);
+
+            //localStorage.removeItem('nombre');
+        }else{
+            alert('Tu navegador no soporta localstorage');
+        }
+        /*--------------------------*/
+        //Llamamos al nombre guardado en localStorage
+        //document.write(localStorage.nombre);
+
+        //Eliminamos el elemento de localStorage
+        //localStorage.removeItem('nombre');
+        /*SESSION STORAGE*/
+        //La información se borra cuando el usuario cierra la pestaña
+        sessionStorage.nombre = 'Josh';
+        document.write(sessionStorage.nombre);
+    </script>
+</body>
+</html>
