@@ -13,8 +13,8 @@ body {
 .contenedor {
 	background: #000;
 	width: 80%;
-	margin: 40px;
-	/*margin: 40px auto;*/
+	/*margin: 40px;*/
+	margin: 40px auto;
 	max-width: 800px;
 }
 
