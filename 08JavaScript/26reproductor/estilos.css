@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background: #e9f1f7;
+}
+
+.contenedor {
+    background: #000;
+    width: 80%;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.contenedor .reproductor {
+    position: relative;
+}
+
+.contenedor .video {
+    width: 100%;
+    vertical-align: top;
+    z-index: 90;
+}
+
+.contenedor .controles {
+    opacity: 1;
+    transition: all .5 ease;
+    -webkit-transition: all .5 ease;
+    -o-transition: all .5 ease;
+}
+
+.contenedor .reproductor:hover .controles {
+    opacity: 1;
+}
