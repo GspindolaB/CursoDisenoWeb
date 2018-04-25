@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoisting</title>
+</head>
+<body>
+    <script>
+        nombre = 'Guillermo';//Inicializacion
+        document.write(nombre);
+        var nombre;//Declaracion
+
+        /*------------------------------------
+        IMPORTANTE: Javascript solo posicionara al inicio las "declaraciones", lo las "inicializaciones"*/
+
+        var edad;
+        document.write(edad);
+
+        edad = 23;
+    </script>
+</body>
+</html>

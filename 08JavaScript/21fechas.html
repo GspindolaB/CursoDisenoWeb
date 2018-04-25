@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fechas en JavaScript</title>
+</head>
+<body>
+    <p>Fecha: <span id="fecha"></span></p>
+    <script>
+        //Se crea un nuevo objeto de tipo Date
+        var fecha = new Date();    
+        document.write(fecha);
+
+        //Función para refrescar la fecha cada segundo
+        function mostrarTiempo(){
+            var fecha = new Date();
+            var span = document.getElementById('fecha');
+            span.innerHTML = fecha;
+        }
+
+        var intervalo = setInterval(mostrarTiempo,1000);
+        
+        //Obtenemos la hora actual, el minuto actual y el segundo actual, dia de la semana.
+        var horas = fecha.getHours(),
+        minutos = fecha.getMinutes(),
+        segundos = fecha.getSeconds(),
+        dia = fecha.getDay(),
+        mes = fecha.getMonth(),
+        anio = fecha.getFullYear();
+        //Los mostramos en la consola
+        console.log(horas + ' Horas');
+        console.log(minutos + ' Minutos');
+        console.log(segundos + ' Segundos');
+        console.log(dia + ' Día');
+
+        var dias = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
+        //Nos muestra el día de la semana en la posicion 3 que es Martes
+        console.log('Día ' + dias[dia]);
+        var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
+                    'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+        //Nos muestra el mes actual en la posicion 4 que es Abril
+        console.log('Mes '  + meses[mes]);
+        console.log("Año " + anio);
+    </script>
+</body>
+</html>

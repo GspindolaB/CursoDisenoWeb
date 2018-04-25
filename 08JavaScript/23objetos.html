@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objetos en Javascript</title>
+</head>
+<body>
+    <script>
+        /*
+        var nombre = 'Guillermo';
+        var edad = 23;
+        var pais = 'Mexico';
+        
+       //Esto es un objeto
+        var guillermo = {
+            nombre: 'Guillermo Ricardo Spindola Brisuela',
+            edad: 23,
+            pais: 'Mexico',
+            //metodo dentro de un objeto
+            metodo: function(){
+                return this.nombre + ' tiene ' + this.edad + ' años ' + ' y es de ' + this.pais; 
+            }
+        };
+        //Esto es otro objeto
+        var christian = {
+            nombre: 'Christian Alexis Spindola Brisuela',
+            edad: 20,
+            pais: 'Mozambique',
+            //otro metodo más dentro de otro objeto
+            metodo: function(){
+                return this.nombre + ' tiene ' + this.edad + ' años ' + ' y es de ' + this.pais; 
+            }
+        };
+        document.write(guillermo.nombre + '<br>');
+        document.write(guillermo.edad + '<br>');
+        document.write(guillermo.pais + '<br>');
+
+        document.write(christian.nombre + '<br>');
+        document.write(christian.edad + '<br>');
+        document.write(christian.pais + '<br>');
+
+        document.write(guillermo.metodo() + '<br>');
+        document.write(christian.metodo() + '<br>');
+        */
+       /*---------------------------------------------*/
+
+       //funcion constructora
+       function persona(nombre, edad, pais){
+           this.nombre=nombre;
+           this.edad=edad;
+           this.pais=pais;
+       }
+       //Des esta manera se crean los objetos y es más facil para crear cuando tenemos mayor cantidad de datos
+       var papa = new persona('Guillermo Ricardo', 51, 'Mexico');
+       var mama = new persona('Patricia', 50, 'Mexico');
+       //Se imprimen las propiedades 
+       document.write(papa.nombre + '<br>');
+       document.write(mama.nombre + '<br>');
+    </script>
+</body>
+</html>
