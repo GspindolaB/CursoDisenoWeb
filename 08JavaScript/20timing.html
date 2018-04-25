@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos de tiempo</title>
+</head>
+
+<body>
+    <button id="btn-iniciar">Iniciar</button>
+    <button id="btn-detener">Detener</button>
+    <script>
+        function saludar(){
+            alert('Hola Mundo');
+        }
+        //---setTimeout()
+        //Permite ejecutar una acción despues de determinado tiempo. Recibe dos parámetros, el primero indicando la función
+        //que se va a ejecutar y el segundo indicando el tiempoque tardara en ejecutarse en milisegundos
+        //setTimeout(saludar, 3000);
+
+        /*Cada que el usuario de click en el boton se ejecutara la funcion saludar cada 5 segundos
+        document.getElementById('btn-iniciar').addEventListener('click', function(){
+            setTimeout(saludar, 5000);
+        });*/
+
+        /*Podemos tambien limpiar el timeout guardando el setTimeout() dentro de una variable.
+        var tiempo = setTimeout(saludar, 3000);
+        clearTimeout(tiempo)*/
+
+        //---setInterval()
+        //A diferencia de setTimeout(), esta de setInterval() se ejecuta cada cierto determinado tiempo automaticamente
+        //setInterval(saludar, 5000);
+        //De igual manera podemos parar la ejecución para que no se realice de manera infinita
+        var intervalo = setInterval(saludar, 5000);
+        document.getElementById('btn-detener').addEventListener('click', function(){
+            clearInterval(intervalo);
+        });
+
+    </script>
+</body>
+
+</html>
