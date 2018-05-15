@@ -35,7 +35,7 @@ $(document).ready(function(){
     $('#btn-menu').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: menu
+            scrollTop: mesnu
         }, 500);
     });
     $('#btn-galeria').on('click', function(e){
