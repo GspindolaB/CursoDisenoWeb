@@ -136,11 +136,23 @@ function materialis_theme_defaults()
 function materialis_is_modified()
 {
     $mods = get_theme_mods();
-    foreach ($mods as $mod => $value) {
-        if (strpos("header", $mod) !== false) {
+    $keys = array_keys($mods);
+    foreach ($keys as $value) {
+        if (strpos("header", $value) !== false) {
             return true;
         }
     }
 
     return false;
 }
+
+function materialis_after_switch_theme_set_defaults_version()
+{
+    $default_preset = get_theme_mod('theme_default_preset', false);
+    if ( ! $default_preset && ! materialis_is_modified()) {
+        set_theme_mod('theme_default_preset', 'dark');
+    }
+
+}
+
+add_action('after_switch_theme', 'materialis_after_switch_theme_set_defaults_version');

@@ -7,7 +7,7 @@
                 <ul class="materialis-features-list">
                     <li><?php esc_html_e('Beautiful ready-made homepage', 'materialis'); ?></li>
                     <li><?php esc_html_e('Drag and drop page customization', 'materialis'); ?></li>
-                    <li><?php esc_html_e('25+ predefined content sections', 'materialis'); ?></li>
+                    <li><?php esc_html_e('35+ predefined content sections', 'materialis'); ?></li>
                     <li><?php esc_html_e('Live content editing', 'materialis'); ?></li>
                     <li><?php esc_html_e('5 header types', 'materialis'); ?></li>
                     <li><?php esc_html_e('3 footer types', 'materialis'); ?></li>

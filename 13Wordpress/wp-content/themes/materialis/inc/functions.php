@@ -1,6 +1,7 @@
 <?php
 
 materialis_require("inc/variables.php");
+materialis_require("inc/defaults-dark.php");
 materialis_require("inc/defaults.php");
 
 function materialis_mod_default($name, $fallback = null)

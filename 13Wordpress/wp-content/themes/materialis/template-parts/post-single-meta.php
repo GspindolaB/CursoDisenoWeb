@@ -20,7 +20,6 @@ if ( ! apply_filters('materialis_show_post_meta', true)) {
             if (is_single()) {
                 ?>
                 <div class="post-footer-category">
-
                     <i class="mdi small mdi-folder-open mdc-card__action mdc-card__action--icon" title="Categories"></i>
                     <?php materialis_the_category(true); ?>
                 </div>
