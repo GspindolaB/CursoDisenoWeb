@@ -21,7 +21,7 @@
                 </div>
                 <div class="widget ad">
                     <div class="contenedor-ad">
-                        <a href=""><img src="img/ad2.jpg" alt="Publicidad mamalona"></a>
+                        <a href=""><img src="<?php bloginfo('template_url') ?>/img/ad2.jpg" alt="Publicidad mamalona"></a>
                     </div>
                 </div>
             </aside>
