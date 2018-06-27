@@ -36,21 +36,28 @@
         <nav class="menu">
             <div class="container">
                 <div class="row">
-                    <ul class="col-md-12">
+                    <!--<ul class="col-md-12">
                         <li><a href="#">HTML</a></li>
                         <li><a href="#">CSS</a></li>
                         <li><a href="#">JAVASCRIPT</a></li>
                         <li><a href="#">PHP</a></li>
                         <li><a href="#">SQL</a></li>
-                    </ul>
+                    </ul>-->
+                    <?php wp_nav_menu(array(
+                        'container' => false,
+                        'menu_class' => '',
+                        'items_wrap' => '<ul class="col-md-12">%3$s</ul>',
+                        'theme_location' => 'menu-top'
+                    )); ?>
                 </div>
             </div>
         </nav>
-        <div class="ad container hidden-xs">
+        <!--<div class="ad container hidden-xs">
             <div class="row">
                 <div class="col-md-12">
                     <img src="<?php bloginfo('template_url') ?>/img/ad.jpg" alt="Publicidad">
                 </div>
             </div>
-        </div>
+        </div>-->
+        <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('Header')) : endif; ?>
     </header>

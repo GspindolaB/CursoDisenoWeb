@@ -42,17 +42,9 @@
                 </div>
                 <section class="row paginacion">
                     <div class="col-md-12">
-                        <ul>
-                            <li class="disabled">Página 1 de 6</li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">6</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">Última >></a></li>
-                        </ul>
+                        <div class="wp-pagenavi">
+                            <?php wp_pagenavi(); ?>
+                        </div>
                     </div>
                 </section>
             </section>
